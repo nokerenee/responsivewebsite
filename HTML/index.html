@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <meta name="author" content="Nicole Kelly" />
+    <title>Nicole Kelly - CV</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap");
+
+      :root {
+        --primary: rgb(58, 158, 229);
+        --primary-dark: rgb(5, 87, 146);
+        --secondary: #0b3660;
+
+        --background-primary: rgb(222, 231, 242);
+        --background-secondary: rgb(222, 231, 242);
+
+        --text-primary: #000;
+        --text-link: rgb(125, 31, 123);
+        --text-link-hover: rgb(198, 54, 155);
+      }
+
+      body {
+        margin: 0;
+        font-family: Verdana, sans-serif;
+        color: var(--text-primary);
+        font-weight: 400;
+        font-size: 12px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      h1 {
+        font-size: 3rem;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+        text-align: center;
+      }
+
+      h3 {
+        font-size: 1rem;
+        margin: 10px 0;
+      }
+
+      h4 {
+        font-size: 1.3rem;
+        margin: 10px 0;
+      }
+
+      h5 {
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      a:link,
+      a:visited {
+        color: var(--text-link);
+        justify-content: center;
+      }
+
+      a:hover,
+      a:active {
+        color: var(--text-link-hover);
+        text-align: center;
+      }
+
+      /* Main container */
+      main {
+        display: flex;
+        flex: 1;
+      }
+
+      /* Main information - name, contact, skills */
+      main > header {
+        flex: 1;
+        background-color: var(--background-primary);
+        margin: 15px;
+        padding: 0 10px;
+        max-width: 250px;
+      }
+
+      main > header > section {
+        margin: 20px 0;
+      }
+
+      main > header h2 {
+        background-color: var(--background-secondary);
+        padding: 10px 10px;
+        margin: 0 -10px;
+      }
+
+      /* Detailed information - education, experience */
+      main > aside {
+        flex: 2;
+        margin: 15px;
+        padding: 0 20px;
+      }
+
+      main > aside > section {
+        border-bottom: 1px solid hsl(0, 3%, 61%);
+      }
+
+      /* Footer */
+      footer {
+        padding: 20px;
+        margin: 20px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--background-secondary-dark);
+      }
+
+      .profile-photo {
+        border-radius: 50%;
+        width: 100%;
+        text-align: center;
+      }
+
+      .skill-item-container {
+        display: flex;
+        justify-content:center;
+        align-items: baseline;
+        padding: 0 20px;
+      }
+
+      .skill-item {
+        text-align: center;
+      }
+
+      .education-item-container {
+        display: flex;
+      }
+
+      @media screen and (max-width: 600px) {
+        body {
+          font-size: 24px;
+        }
+        main {
+          flex-direction: column;
+        }
+
+        main > header {
+          max-width: none;
+        }
+
+        picture {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .profile-photo {
+          max-width: 300px;
+          justify-content: center;
+        }
+
+        header {
+          text-align: center;
+        }
+
+      .skill-item-container {
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+
+  <main>
+    <header>
+      <section>
+        <h1>N|K</h1>
+        <img class="profile-photo" src="../Assets/profile-photo.png" />
+      </section>
+      <section>
+        <h2>Personal info</h2>
+        <div>
+          <h5>Phone</h5>
+          <a href="tel:+64273032090">+64273032090</a>
+        </div>
+        <div>
+          <h5>E-mail</h5>
+          <a href="mailto:nrkelly57@gmail.com"
+            >nrkelly57@gmail.com</a
+          >
+        </div>
+      </section>
+      <section>
+        <h2>Skills</h2>
+        <div class="skill-item-container">
+          <p class="skill-item">HTML</p>
+        </div>
+        <div class="skill-item-container">
+          <p class="skill-item">CSS</p>
+        </div>
+        <div class="skill-item-container">
+          <p class="skill-item">JavaScript</p>
+        </div>
+      </section>
+    </header>
+
+    <aside>
+      <section>
+        <h4>Experience</h4>
+        <section>
+          <h3>Future Web Developer</h3>
+          <p>Institute of Data, <time>June 2023 - Current</time></p>
+          <ul>
+            <li>Creating beautiful websites with use of HTML and CSS</li>
+            <li>Following best accessibility principles</li>
+            <li>Solving problems and proposing smooth, working solutions</li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <h3>Barista/Front of House</h3>
+        <p>Eat Drink Laugh <time>December 2022 - Current</time></p>
+        <ul>
+          <li>Preparing and serving high quality coffee, tea, specialty beverages and cocktails</li>
+          <li>Calibration of bean grind and maintenance of espresso coffee machine</li>
+          <li>Handling bookings, ushering customers to their tables, presenting menus, maintaining proper dining experience, and communicating specific customer needs to the kitchen</li>
+        </ul>
+      </section>
+      <section>
+        <h4>Education</h4>
+        <section>
+          <h3>Institute of Data Web Development Course</h3>
+          <p>Institute of Data, <time>September 2021 - 2021</time></p>
+          <ul>
+            <li>Web development</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>node.js</li>
+            <li>express servers</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Colorado State University <time>2010 - 2014</time></h3>
+          <p>Bachelor of Science - Microbiology</p>
+        </section>
+      </section>
+    </aside>
+  </main>
+  <footer>Created by Nicole Kelly, 2023</footer>
+</html>
